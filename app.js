@@ -13,7 +13,7 @@ const render = require("./lib/htmlRenderer");
 // and to create objects for each team member (using the correct classes as blueprints!)
 
 const OUTPUT_DIR = path.resolve(__dirname, "output")
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+const outputPath = path.join(OUTPUT_DIR, "team.html",);
 
 
 
@@ -26,7 +26,7 @@ function buildTeamPage() {
     console.log(render(teamMembers));
 
     // Output file.
-    fs.writeFileSync(outputPath, render(teamMembers), 'utf-8');
+    fs.writeFileSync(outputPath, render(teamMembers), 'utf8');
 }
 
 function addTeamMember() {
@@ -84,7 +84,7 @@ function promptManager() {
             name: "managerOffice"
         },
     ]).then(answers => {
-        // console.log({ answers });
+        console.log({ answers });
 
         const { name, id, email, officeNumber } = answers;
 
@@ -120,7 +120,7 @@ function promptEngineer() {
         },
     ])
         .then(answers => {
-            //   console.log({ answers });
+              console.log({ answers });
 
             const { name, id, email, github } = answers;
 
@@ -156,7 +156,7 @@ function promptIntern() {
         },
     ])
         .then(answers => {
-            // console.log({ answers });
+            console.log({ answers });
 
             const { name, id, email, school } = answers;
 

@@ -14,7 +14,7 @@ The user can input any number of team members, and they may be a mix of engineer
 
 ## Screenshots of the app
 ---
-
+![home](/assets/team_template.png)
 ---
 
 ## Table of Contents
