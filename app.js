@@ -12,10 +12,9 @@ const render = require("./lib/htmlRenderer");
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
-const OUTPUT_DIR = path.resolve(__dirname, "output")
+const OUTPUT_DIR = path.resolve(__dirname, "output");
+
 const outputPath = path.join(OUTPUT_DIR, "team.html",);
-
-
 
 
 const teamMembers = [];
@@ -66,22 +65,22 @@ function promptManager() {
         {
             type: "input",
             message: "What is your manager's name?",
-            name: "managerName"
+            name: "name"
         },
         {
             type: "input",
             message: "What is your manager's id?",
-            name: "managerId"
+            name: "id"
         },
         {
             type: "input",
             message: "What is manager's email?",
-            name: "managerEmail"
+            name: "email"
         },
         {
             type: "input",
             message: "What is your manager's office number?",
-            name: "managerOffice"
+            name: "officeNumber"
         },
     ]).then(answers => {
         console.log({ answers });
@@ -101,22 +100,22 @@ function promptEngineer() {
         {
             type: "input",
             message: "What is your engineer name?",
-            name: "engineerName"
+            name: "name"
         },
         {
             type: "input",
             message: "What is your engineer id?",
-            name: "engineerId"
+            name: "id"
         },
         {
             type: "input",
             message: "What is your engineer email?",
-            name: "engineerEmail"
+            name: "email"
         },
         {
             type: "input",
             message: "What is your engineer GitHub username",
-            name: "engineerGitHub"
+            name: "gitHub"
         },
     ])
         .then(answers => {
@@ -137,22 +136,22 @@ function promptIntern() {
         {
             type: "input",
             message: "What is your intern name?",
-            name: "internName"
+            name: "name"
         },
         {
             type: "input",
             message: "What is your intern id?",
-            name: "internId"
+            name: "id"
         },
         {
             type: "input",
             message: "What is your intern email?",
-            name: "internEmail"
+            name: "email"
         },
         {
             type: "input",
             message: "What is your intern school?",
-            name: "internSchool"
+            name: "school"
         },
     ])
         .then(answers => {
