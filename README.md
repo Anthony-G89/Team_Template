@@ -13,8 +13,11 @@ This app will prompt the user for information about the team manager and then in
 The user can input any number of team members, and they may be a mix of engineers and interns.
 
 ## Screenshots of the app
----
-![home](/assets/team_template_final.png)
+
+![home](/assets/team-template-q.png)
+
+![results](/assets/team-template-r.png)
+
 ---
 
 ## Table of Contents
